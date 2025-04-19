@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>React alkalmazások</title>
+
+    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+    <link rel="stylesheet" href="react-style.css">
+
+    <script type="text/babel" src="react/counter/src/App.js"></script>
+    <script type="text/babel" src="react/todo/src/App.js"></script>
+</head>
+<body>
+
+    <h1>React alkalmazások</h1>
+
+    <div>
+        <button onclick="showCounter()">Számláló alkalmazás</button>
+        <button onclick="showTodo()">To-Do lista alkalmazás</button>
+    </div>
+
+    <div id="root"></div>
+
+    <footer>
+        Készítők: Fedor Attila_CCP9C6, Fityó Györgyi_LW34MW
+    </footer>
+
+    <script type="text/babel">
+        function showCounter() {
+            ReactDOM.render(<CounterApp />, document.getElementById('root'));
+        }
+
+        function showTodo() {
+            ReactDOM.render(<TodoApp />, document.getElementById('root'));
+        }
+    </script>
+
+</body>
+</html>

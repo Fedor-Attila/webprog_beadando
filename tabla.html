@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Webprogramozás 1 - Táblázat</title>
+    <link rel="stylesheet" href="stilus.css">
+    <script defer src="tabla.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Webprogramozás 1 - Előadás Házi Feladat</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a class="active" href="tabla.html">Táblázat</a></li>
+        <li><a href="html5.html">HTML5 API</a></li>
+        <li><a href="chart.html">ChartJS</a></li>
+        <li><a href="ajax.html">AJAX CRUD</a></li>
+        <li><a href="oojs.html">OOJS példa</a></li>
+        <li><a href="react.html">React alkalmazások</a></li>
+    </ul>
+</nav>
+
+<aside>
+    <p>Ez az oldalsáv. Itt egy táblázat CRUD funkcióit mutatom be.</p>
+</aside>
+
+<div id="div-content">
+    <h2>Táblázat kezelése (CRUD)</h2>
+
+    <h3>Új rekord hozzáadása</h3>
+    <input type="text" id="name" placeholder="Név">
+    <input type="number" id="age" placeholder="Kor">
+    <input type="text" id="city" placeholder="Város">
+    <input type="email" id="email" placeholder="Email">
+    <button onclick="addRow()">Hozzáadás</button>
+
+    <h3>Táblázat</h3>
+    <input type="text" id="search" placeholder="Keresés..." onkeyup="searchTable()">
+    
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Név</th>
+                <th onclick="sortTable(1)">Kor</th>
+                <th onclick="sortTable(2)">Város</th>
+                <th onclick="sortTable(3)">Email</th>
+                <th>Műveletek</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- ide kerülnek a sorok -->
+        </tbody>
+    </table>
+
+</div>
+
+<footer>
+    Készítette: [A Te Neved] – [Neptun kód]
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Webprogramozás 1 - AJAX CRUD</title>
+    <link rel="stylesheet" href="stilus.css">
+    <script defer src="ajax.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Webprogramozás 1 - Előadás Házi Feladat</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="tabla.html">Táblázat</a></li>
+        <li><a href="html5.html">HTML5 API</a></li>
+        <li><a href="chart.html">ChartJS</a></li>
+        <li><a class="active" href="ajax.html">AJAX CRUD</a></li>
+        <li><a href="oojs.html">OOJS példa</a></li>
+        <li><a href="react.html">React alkalmazások</a></li>
+    </ul>
+</nav>
+
+<aside>
+    <p>Ez az oldalsáv. Itt AJAX műveletekkel kezeljük az adatokat.</p>
+</aside>
+
+<div id="div-content">
+    <h2>Adatok betöltése</h2>
+    <button onclick="loadData()">Adatok betöltése</button>
+    <div id="dataList"></div>
+    <div id="statistics"></div>
+
+    <h2>Új adat hozzáadása</h2>
+    <input type="text" id="newName" placeholder="Név">
+    <input type="text" id="newHeight" placeholder="Magasság (cm)">
+    <input type="text" id="newWeight" placeholder="Súly (kg)">
+    <button onclick="createData()">Hozzáadás</button>
+
+    <h2>Adat módosítása</h2>
+    <input type="text" id="updateId" placeholder="ID">
+    <button onclick="getDataForId()">Adatok betöltése ID alapján</button><br><br>
+    <input type="text" id="updateName" placeholder="Név">
+    <input type="text" id="updateHeight" placeholder="Magasság (cm)">
+    <input type="text" id="updateWeight" placeholder="Súly (kg)">
+    <button onclick="updateData()">Módosítás</button>
+
+    <h2>Adat törlése</h2>
+    <input type="text" id="deleteId" placeholder="ID">
+    <button onclick="deleteData()">Törlés</button>
+
+    <div id="message"></div>
+</div>
+
+<footer>
+    Készítette: [A Te Neved] – [Neptun kód]
+</footer>
+
+</body>
+</html>

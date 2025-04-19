@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Webprogramozás 1 - OOJS példa</title>
+    <link rel="stylesheet" href="stilus.css">
+    <script defer src="oojs.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Webprogramozás 1 - Előadás Házi Feladat</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="tabla.html">Táblázat</a></li>
+        <li><a href="html5.html">HTML5 API</a></li>
+        <li><a href="chart.html">ChartJS</a></li>
+        <li><a href="ajax.html">AJAX CRUD</a></li>
+        <li><a class="active" href="oojs.html">OOJS példa</a></li>
+        <li><a href="react.html">React alkalmazások</a></li>
+    </ul>
+</nav>
+
+<aside>
+    <p>Ez az oldalsáv. Itt egy objektumorientált JavaScript példát mutatok be.</p>
+</aside>
+
+<div id="div-content">
+    <h2>Állat objektumok kezelése (OOJS példa)</h2>
+
+    <input type="text" id="dogName" placeholder="Kutya neve">
+    <input type="text" id="dogBreed" placeholder="Fajtája">
+    <input type="number" id="dogAge" placeholder="Kora">
+    <button onclick="addDog()">Kutya hozzáadása</button>
+
+    <h3>Hozzáadott kutyák:</h3>
+    <div id="dogList"></div>
+
+</div>
+
+<footer>
+    Készítette: [A Te Neved] – [Neptun kód]
+</footer>
+
+</body>
+</html>

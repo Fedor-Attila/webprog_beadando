@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Webprogramozás 1 - ChartJS diagram</title>
+    <link rel="stylesheet" href="stilus.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script defer src="chart.js"></script>
+</head>
+<body>
+
+<header>
+    <h1>Webprogramozás 1 - Előadás Házi Feladat</h1>
+</header>
+
+<nav>
+    <ul>
+        <li><a href="index.html">Főoldal</a></li>
+        <li><a href="tabla.html">Táblázat</a></li>
+        <li><a href="html5.html">HTML5 API</a></li>
+        <li><a class="active" href="chart.html">ChartJS</a></li>
+        <li><a href="ajax.html">AJAX CRUD</a></li>
+        <li><a href="oojs.html">OOJS példa</a></li>
+        <li><a href="react.html">React alkalmazások</a></li>
+    </ul>
+</nav>
+
+<aside>
+    <p>Ez az oldalsáv. Itt egy ChartJS diagramot mutatok be egy táblázat alapján.</p>
+</aside>
+
+<div id="div-content">
+    <h2>Táblázatból készített diagram</h2>
+
+    <table id="dataTableChart">
+        <thead>
+            <tr>
+                <th>Név</th>
+                <th>Érték</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr><td>Elem 1</td><td>12</td></tr>
+            <tr><td>Elem 2</td><td>19</td></tr>
+            <tr><td>Elem 3</td><td>3</td></tr>
+            <tr><td>Elem 4</td><td>5</td></tr>
+            <tr><td>Elem 5</td><td>2</td></tr>
+        </tbody>
+    </table>
+
+    <button onclick="generateChart()">Diagram készítése</button>
+
+    <canvas id="myChart" width="400" height="200"></canvas>
+</div>
+
+<footer>
+    Készítette: [A Te Neved] – [Neptun kód]
+</footer>
+
+</body>
+</html>
